@@ -38,7 +38,7 @@ const galleryContainer = document.querySelector('.gallery');
 const galleryItemsMarkup = createGalleryItemsMarkup(galleryItems);
 
 galleryContainer.insertAdjacentHTML("beforeend", galleryItemsMarkup);
-galleryContainer.addEventListener("clic", onGalleryContainerClic);
+galleryContainer.addEventListener("click", onGalleryContainerClic);
 
 function createGalleryItemsMarkup(galleryItems) {
     return galleryItems.map(({ preview, original, description }) => {
